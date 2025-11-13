@@ -9,14 +9,13 @@ export async function GET() {
       name: "Stackmon",
       iconUrl: `${APP_URL}/images/icon.png`,
       homeUrl: `${APP_URL}`,
-      imageUrl: `${APP_URL}/images/feed.png`,
+      imageUrl: `${APP_URL}/images/meta.png`,
       screenshotUrls: [],
       tags: ["monad", "farcaster", "miniapp", "game", "x402"],
       primaryCategory: "game with Gx402",
       buttonTitle: "Launch ",
-      splashImageUrl: `${APP_URL}/images/splash.png`,
+      splashImageUrl: `${APP_URL}/images/icon.png`,
       splashBackgroundColor: "#ffffff",
-      webhookUrl: `${APP_URL}/api/webhook`,
     },
   };
 
