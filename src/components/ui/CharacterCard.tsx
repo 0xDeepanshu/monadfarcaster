@@ -9,9 +9,9 @@ export default function CharacterCard() {
       {/* Character placeholder - Using placeholder image */}
       <div className="relative w-full h-full flex items-center justify-center">
         <img
-          src="/monad.png"
+          src="/images/stackmon/monadmain.png"
           alt="GameHub Mascot"
-          className="w-full h-fullobject-contain drop-shadow-2xl rounded-3xl"
+          className="w-full h-full object-contain drop-shadow-2xl rounded-3xl"
         />
       </div>
 

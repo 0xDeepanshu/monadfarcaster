@@ -19,10 +19,10 @@ export default function UnityPlayer() {
     }
 
     // Adjust these names to match the files in /public/unity/Build/
-    const LOADER = "/unity/Build/Build.loader.js";
-    const DATA = "/unity/Build/Build.data";
-    const FRAMEWORK = "/unity/Build/Build.framework.js";
-    const WASM = "/unity/Build/Build.wasm";
+     const LOADER = "/unity/Build/BuildMonad.loader.js";
+    const DATA = "/unity/Build/BuildMonad.data";
+    const FRAMEWORK = "/unity/Build/BuildMonad.framework.js";
+    const WASM = "/unity/Build/BuildMonad.wasm";
 
     const script = document.createElement("script");
     script.src = LOADER;

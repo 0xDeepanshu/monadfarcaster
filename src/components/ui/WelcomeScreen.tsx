@@ -13,11 +13,17 @@ export default function WelcomeScreen() {
   }
 
   return (
-    <div className="relative min-h-screen w-full bg-gradient-to-br from-[#1a0f2e] via-[#2d1b4e] to-[#1a0f2e] flex flex-col items-center justify-between px-4 py-8 pb-14">
+    <div className="relative min-h-screen w-full bg-gradient-to-br from-[#1a0f2e] via-[#2d1b4e] to-[#1a0f2e] flex flex-col items-center justify-between px-4 py-8 pb-14 italic">
 
       {/* Top bar */}
       <div className="relative z-10 w-full max-w-sm flex justify-between items-center mb-6">
-        <h1 className="text-4xl font-bold text-primary font-sans text-purple-200">StackMon</h1>
+        <h1 className="text-xl font-bold text-primary font-sans text-purple-200">
+          <img
+          src="/images/stackmon/text.png"
+          alt="GameHub Mascot"
+          className="w-40 h-full object-contain drop-shadow-2xl rounded-3xl"
+        />
+        </h1>
         <WalletConnect />
       </div>
 

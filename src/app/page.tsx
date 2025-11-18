@@ -3,6 +3,7 @@ import Main from "@/components/Home/Index";
 import { X402 } from "@/components/Home/WalletConnect";
 import { APP_URL } from '@/lib/constants'
 import type { Metadata } from 'next'
+import ClaimTokenMount from "@/components/Home/ClaimToken";
 const miniapp = {
   version: 'next',
   imageUrl: `${APP_URL}/images/icon.png`,
@@ -36,6 +37,7 @@ export default function Home() {
     <>
     <Main />
     {/* <X402/> */}
+    <ClaimTokenMount />
     </>
   );
 }
