@@ -36,7 +36,7 @@ export default function RootLayout({
       <body
         className={`${openSans.className} antialiased` }
       >
-       <Providers> {children} </Providers>
+       <Providers><UnityBridge /> {children} </Providers>
       </body>
     </html>
   );
