@@ -1,11 +1,12 @@
 "use client";
 
 import { log } from "console";
+import { url } from "inspector";
 import { useCallback, useEffect, useState } from "react";
 import { useAccount } from "wagmi";
 import { base } from "wagmi/chains";
 
-const contractAddress = "0xeBc121bF780686413778b4222144B0D9Bc49Bb07";
+const contractAddress = "0x082c2852368bdf09af486e1351340268f8d94b07";
 const contractABI = [
     {
         "inputs": [
@@ -1281,6 +1282,15 @@ const contractABI = [
         "type": "function"
     }
 ]
+const MONAD_MAINNET = {
+  id: 143,
+  name: "Monad Mainnet",
+  network: "monad",
+  nativeCurrency: { name: "Monad", symbol: "MON", decimals: 18 },
+  rpcUrls: { default: { http: ["https://rpc.monad.xyz"] }, public: { http: ["https://rpc.monad.xyz"] } },
+  blockExplorers: { default: { name: "MonadVision", url: "https://monadvision.com" } },
+  testnet: false,
+};
 
 export default function ClaimTokenMount() {
   const { isConnected, address } = useAccount();
@@ -1317,8 +1327,8 @@ export default function ClaimTokenMount() {
       );
 
       const publicClient = createPublicClient({
-        chain: base,
-        transport: http(),
+        chain: MONAD_MAINNET,
+        transport: http("https://rpc.monad.xyz"),
       });
 
       const decimals = await publicClient.readContract({
@@ -1332,8 +1342,8 @@ export default function ClaimTokenMount() {
 
       const walletClient = createWalletClient({
         account,
-        chain: base,
-        transport: http(),
+        chain: MONAD_MAINNET,
+        transport: http("https://rpc.monad.xyz"),
       });
       console.log(tokenAmount);
       
