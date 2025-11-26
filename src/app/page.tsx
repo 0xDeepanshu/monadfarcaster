@@ -8,7 +8,7 @@ const miniapp = {
   version: 'next',
   imageUrl: `${APP_URL}/images/icon.png`,
   button: {
-    title: 'Launch Template',
+    title: 'Play',
     action: {
       type: 'launch_miniapp',
       name: 'stackmon',
