@@ -1,11 +1,6 @@
 "use client";
-
-import { log } from "console";
-import { url } from "inspector";
 import { useCallback, useEffect, useState } from "react";
 import { useAccount } from "wagmi";
-import { base } from "wagmi/chains";
-
 const contractAddress = "0x082c2852368bdf09af486e1351340268f8d94b07";
 const contractABI = [
     {
@@ -1336,10 +1331,18 @@ export default function ClaimTokenMount() {
         abi: contractABI,
         functionName: "decimals",
       });
-
       const tokenAmount =
-        BigInt(Number(unityScore)) * 10n ** BigInt(Number(decimals));
+      BigInt(Number(unityScore)) * 10n ** BigInt(Number(decimals));
+      
+      console.log("unityScore:", unityScore);
+        console.log("tokenAmount:", tokenAmount.toString());
 
+        //  STOP if score is 0
+        if (unityScore === 0 || tokenAmount === 0n) {
+        setMessage("Score is 0 — nothing to claim.");
+       
+        return;
+        }
       const walletClient = createWalletClient({
         account,
         chain: MONAD_MAINNET,
