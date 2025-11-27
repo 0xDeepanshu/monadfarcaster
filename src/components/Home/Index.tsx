@@ -36,16 +36,8 @@ function Main() {
       } catch (err: any) {
         console.error("addMiniApp failed:", err)
 
-        // Handle the documented error cases:
-        if (err?.name === "RejectedByUser" || err?.code === "RejectedByUser") {
-          // user dismissed the prompt — store timestamp for a retry policy if desired
-          localStorage.setItem("miniapp_prompt_rejected_at", String(Date.now()))
-        } else if (err?.name === "InvalidDomainManifestJson" || err?.code === "InvalidDomainManifestJson") {
-          // domain/manifest mismatch (tunnel domain, wrong domain) — don't keep trying
-          // keep the prompted flag so we avoid spamming; check your farcaster.json manifest
-        } else {
-          // unknown error — inspect console and don't spam the user
-        }
+        // Handle the documented error cases:zz
+  
       }
     }
 
