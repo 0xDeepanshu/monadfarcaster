@@ -13,7 +13,6 @@ function Main() {
 
     // NOTE: the correct flag in sdk.context is `context.client.added`
     // (not `capabilities`). See SDK docs for context shape.
-    const alreadyAdded = Boolean(context.client?.added)
 
 
     const doAdd = async () => {
@@ -30,7 +29,7 @@ function Main() {
     }
 
     doAdd()
-  }, [isSDKLoaded, context, actions, requestedAdd])
+  }, [isSDKLoaded, context, actions])
     if (isLoading) {
     return (
       <SafeAreaContainer insets={context?.client.safeAreaInsets}>

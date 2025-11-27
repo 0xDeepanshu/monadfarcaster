@@ -3,8 +3,12 @@ import { APP_URL } from "../../../lib/constants";
 
 export async function GET() {
   const farcasterConfig = {
-    // TODO: Add your own account association
-    frame: {
+    "accountAssociation": {
+    "header": "eyJmaWQiOjEzNzUzNjIsInR5cGUiOiJhdXRoIiwia2V5IjoiMHg4RDdiQzIxMDM2ZkZCQkU3NjQ3MEM1Yjk4QTFhNDBkOTI5M0E2NjAyIn0",
+    "payload": "eyJkb21haW4iOiJzdGFrY3N0YWtlZmFyY2FzdGVyLnZlcmNlbC5hcHAifQ",
+    "signature": "+Z/k171REdkBHDohAtqNctS0oFaXfBuzNGatgD1aWwVF0TBIIaEqf8O4z1MlUhGmr79e5s7MIMO4ahPrIaDJGxs="
+  },
+    "miniapp": {
       version: "1",
       name: "Stackmon",
       iconUrl: `${APP_URL}/images/icon.png`,
@@ -15,15 +19,12 @@ export async function GET() {
       primaryCategory: "game with Gx402",
       buttonTitle: "Launch ",
       splashImageUrl: `${APP_URL}/images/icon.png`,
+       heroImageUrl: `${APP_URL}/images/hero.png`,
       splashBackgroundColor: "#000000",
       subtitle: "play and stack",
       description: "StackMon is a fast, addictive tile-stacking game where every perfect drop brings you closer to earning tokens. Build the tallest tower you can, beat your high score, and claim rewards based on skill — not luck."
     },
-    accountAssociation: {
-    header: "eyJmaWQiOjEzNzUzNjIsInR5cGUiOiJhdXRoIiwia2V5IjoiMHg4RDdiQzIxMDM2ZkZCQkU3NjQ3MEM1Yjk4QTFhNDBkOTI5M0E2NjAyIn0",
-    payload: "eyJkb21haW4iOiJ3d3cuc3RhY2ttb24ueHl6In0",
-    signature: "8UjnwjtndgOMnhdUhSqumbHhXI35iaCpFcKhXPwkw494nNBWWQc1NjfH1H/Z0M5bQawqgaxpNMJ4TKv4IvJmDxs="
-  }
+    
   };
 
   return NextResponse.json(farcasterConfig);
