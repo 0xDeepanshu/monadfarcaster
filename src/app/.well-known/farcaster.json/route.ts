@@ -16,13 +16,13 @@ export async function GET() {
       imageUrl: `${APP_URL}/images/meta.png`,
       screenshotUrls: [],
       tags: ["monad", "farcaster", "miniapp", "game", "x402"],
-      primaryCategory: "game with Gx402",
+      primaryCategory: 'games',
       buttonTitle: "Launch ",
       splashImageUrl: `${APP_URL}/images/icon.png`,
        heroImageUrl: `${APP_URL}/images/hero.png`,
       splashBackgroundColor: "#000000",
       subtitle: "play and stack",
-      description: "StackMon is a fast, addictive tile-stacking game where every perfect drop brings you closer to earning tokens. Build the tallest tower you can, beat your high score, and claim rewards based on skill — not luck."
+      description: "StackMon is a fast, addictive tile-stacking game where every perfect drop boosts your score and earns tokens. Build the tallest tower, beat your best, and claim real rewards"
     },
     
   };
