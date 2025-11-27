@@ -36,8 +36,8 @@ export default function RootLayout({
     <html lang="en">
       <head>
       
-        <meta name="fc:miniapp" content='{"version":"1","imageUrl":"https://stackmon.xyz/images/icon.png","button":{"title":"Play","action":{"type":"launch_miniapp","name":"Stackmon","url":"https://stackmon.xyz","splashImageUrl":"https://stackmon.xyz/images/icon.png","splashBackgroundColor":"#000000"}}}' />
-        <meta name="fc:frame" content='{"version":"1","imageUrl":"https://stackmon.xyz/images/icon.png","button":{"title":"Play","action":{"type":"launch_frame","name":"Stackmon","url":"https://stackmon.xyz","splashImageUrl":"https://stackmon.xyz/images/icon.png","splashBackgroundColor":"#000000"}}}' />
+        <meta name="fc:miniapp" content='{"version":"1","imageUrl":"https://stackmon.xyz/images/icon.png","button":{"title":"Play","action":{"type":"launch_miniapp","name":"Stackmon","url":"https://stackmon.xyz","splashImageUrl":"https://stackmon.xyz/images/splash.png","splashBackgroundColor":"#000000"}}}' />
+        <meta name="fc:frame" content='{"version":"1","imageUrl":"https://stackmon.xyz/images/icon.png","button":{"title":"Play","action":{"type":"launch_frame","name":"Stackmon","url":"https://stackmon.xyz","splashImageUrl":"https://stackmon.xyz/images/splash.png","splashBackgroundColor":"#000000"}}}' />
       </head>
       <body
         className={`${openSans.className} antialiased` }

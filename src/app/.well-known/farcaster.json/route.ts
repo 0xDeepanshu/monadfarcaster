@@ -20,7 +20,7 @@ export async function GET() {
       tags: ["monad", "farcaster", "miniapp", "game", "x402"],
       primaryCategory: 'games',
       buttonTitle: "Launch ",
-      splashImageUrl: `${APP_URL}/images/icon.png`,
+      splashImageUrl: `${APP_URL}/images/splash.png`,
        heroImageUrl: `${APP_URL}/images/hero.png`,
       splashBackgroundColor: "#000000",
       subtitle: "play and stack",
