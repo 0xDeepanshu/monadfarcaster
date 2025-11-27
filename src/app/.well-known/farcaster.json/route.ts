@@ -3,11 +3,13 @@ import { APP_URL } from "../../../lib/constants";
 
 export async function GET() {
   const farcasterConfig = {
-    "accountAssociation": {
+    
+  "accountAssociation": {
     "header": "eyJmaWQiOjEzNzUzNjIsInR5cGUiOiJhdXRoIiwia2V5IjoiMHg4RDdiQzIxMDM2ZkZCQkU3NjQ3MEM1Yjk4QTFhNDBkOTI5M0E2NjAyIn0",
     "payload": "eyJkb21haW4iOiJzdGFja21vbi54eXoifQ",
-    "signature": "+Z/sjDwsfcepVw2mqiEcBzdpkd6JcAtF="
+    "signature": "sjDwsfcepVw2mqiEcBzdpkd6JcAtF/kkxnSeW//hoHFVs3Abr+PtKTEdzWdoeQqOq0yUl5m7oz7nu3k5JhDQlxw="
   },
+
     "miniapp": {
       version: "1",
       name: "Stackmon",
