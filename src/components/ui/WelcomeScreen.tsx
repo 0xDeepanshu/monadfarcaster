@@ -8,7 +8,7 @@ import Link from "next/link"
 import { useFrame } from "../farcaster-provider"
 export default function WelcomeScreen() {
   return (
-    <div className="relative min-h-screen w-full bg-gradient-to-br from-[#1a0f2e] via-[#2d1b4e] to-[#1a0f2e] flex flex-col items-center justify-between px-4 py-8 pb-14 italic">
+    <div className="relative min-h-screen w-full bg-gradient-to-br from-[#1a0f2e] via-[#2d1b4e] to-[#1a0f2e] flex flex-col items-center justify-between px-4 py-8 pb-14 ">
 
       {/* Top bar */}
       <div className="relative z-10 w-full max-w-sm flex justify-between items-center mb-6">
