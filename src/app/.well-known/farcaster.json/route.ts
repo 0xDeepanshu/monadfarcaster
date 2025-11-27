@@ -15,7 +15,7 @@ export async function GET() {
       name: "Stackmon",
       iconUrl: `${APP_URL}/images/icon.png`,
       homeUrl: `${APP_URL}`,
-      imageUrl: `${APP_URL}/images/meta.png`,
+      imageUrl: `${APP_URL}/images/icon.png`,
       screenshotUrls: [],
       tags: ["monad", "farcaster", "miniapp", "game", "x402"],
       primaryCategory: 'games',
