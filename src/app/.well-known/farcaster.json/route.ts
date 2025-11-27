@@ -13,7 +13,7 @@ export async function GET() {
     "miniapp": {
       version: "1",
       name: "Stackmon",
-      iconUrl: `${APP_URL}/images/icon.png`,
+      iconUrl: `${APP_URL}/images/meta.png`,
       homeUrl: `${APP_URL}`,
       imageUrl: `${APP_URL}/images/icon.png`,
       screenshotUrls: [],
