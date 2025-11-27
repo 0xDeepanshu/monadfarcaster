@@ -22,7 +22,7 @@ export async function GET() {
        heroImageUrl: `${APP_URL}/images/hero.png`,
       splashBackgroundColor: "#000000",
       subtitle: "play and stack",
-      description: "StackMon is a fast, addictive tile-stacking game where every perfect drop boosts your score and earns tokens. Build the tallest tower, beat your best, and claim real rewards"
+      description: "StackMon is a fast, addictive tile-stacking game where perfect drops earn tokens. Build the tallest tower, beat your high score, and unlock rewards."
     },
     
   };
