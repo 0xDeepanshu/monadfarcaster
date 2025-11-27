@@ -5,13 +5,8 @@ import { Play } from "lucide-react"
 import CharacterCard from "./CharacterCard"
 import WalletConnect from "./WalletConnect"
 import Link from "next/link"
+import { useFrame } from "../farcaster-provider"
 export default function WelcomeScreen() {
-  const [currentPage, setCurrentPage] = useState(0)
-
-  const handlePlayClick = () => {
-    console.log("Play button clicked")
-  }
-
   return (
     <div className="relative min-h-screen w-full bg-gradient-to-br from-[#1a0f2e] via-[#2d1b4e] to-[#1a0f2e] flex flex-col items-center justify-between px-4 py-8 pb-14 italic">
 
