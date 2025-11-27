@@ -15,18 +15,6 @@ function Main() {
     // (not `capabilities`). See SDK docs for context shape.
     const alreadyAdded = Boolean(context.client?.added)
 
-    if (alreadyAdded) {
-      // If app already added, clear any local prompt flag and return
-      localStorage.removeItem("miniapp_prompt_shown")
-      return
-    }
-
-    // Don't prompt repeatedly across reloads
-    if (localStorage.getItem("miniapp_prompt_shown") || requestedAdd) return
-
-    setRequestedAdd(true)
-    // mark that we've asked once (prevents immediate re-prompts)
-    localStorage.setItem("miniapp_prompt_shown", "1")
 
     const doAdd = async () => {
       try {
