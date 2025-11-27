@@ -13,7 +13,7 @@ const miniapp = {
       type: 'launch_miniapp',
       name: 'stackmon',
       url: APP_URL,
-      splashImageUrl: `${APP_URL}/images/meta.png`,
+      splashImageUrl: `${APP_URL}/images/splash.png`,
       splashBackgroundColor: '#f7f7f7',
     },
   },
