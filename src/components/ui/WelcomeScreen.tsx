@@ -45,9 +45,7 @@ export default function WelcomeScreen() {
           {/* Play button */}
           <Link
             href="/play"
-            className="bg-purple-200 relative group w-full max-w-xs py-4 px-8 bg-gradient-to-r from-primary to-secondary 
-                      rounded-2xl flex items-center justify-center gap-3 font-bold text-primary-foreground 
-                      hover:shadow-lg hover:shadow-primary/50 transition-all duration-300 transform hover:scale-105"
+            className="bg-purple-200 relative group w-full max-w-xs py-4 px-8 bg-gradient-to-r from-primary to-secondary rounded-2xl flex items-center justify-center gap-3 font-bold text-primary-foreground hover:shadow-lg hover:shadow-primary/50 transition-all duration-300 transform hover:scale-105"
           >
             <Play size={24} className="fill-black" />
             <span className="text-lg text-black">Play</span>
@@ -56,9 +54,7 @@ export default function WelcomeScreen() {
           {/* Leaderboard button */}
           <button
             onClick={() => setShowLeaderboard(true)}
-            className="bg-purple-900/50 relative group w-full max-w-xs py-4 px-8 border border-purple-500/30
-                      rounded-2xl flex items-center justify-center gap-3 font-bold text-purple-200 
-                      hover:bg-purple-900/80 hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300 transform hover:scale-105"
+            className="bg-purple-900/50 relative group w-full max-w-xs py-4 px-8 border border-purple-500/30 rounded-2xl flex items-center justify-center gap-3 font-bold text-purple-200 hover:bg-purple-900/80 hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300 transform hover:scale-105"
           >
             <Trophy size={24} className="text-yellow-400" />
             <span className="text-lg">Leaderboard</span>
