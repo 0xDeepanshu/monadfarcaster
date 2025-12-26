@@ -1380,6 +1380,8 @@ export default function ClaimTokenMount() {
     // Also ensure it's available immediately in case Unity calls it quickly
     if (typeof window.handleClaimToken === 'function') {
       console.log("✓ handleClaimToken is ready for Unity calls");
+      console.log("ms");
+      
     }
 
     return () => {
